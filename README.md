@@ -14,6 +14,6 @@ Technologies Used
 * MUI
 * Swiper Carousel
 
-[DEMO LINK](https://svyatoslavPy.github.io/phone-catalog/) | [LAYOUT DESIGN](https://www.figma.com/design/dY3izAm0Vspsmra4lQWQIP/Bakerlab_FE-students?node-id=0-1](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
+[DEMO LINK](https://svyatoslavPy.github.io/phone-catalog/) | [LAYOUT DESIGN](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
 
 
