@@ -1,4 +1,3 @@
-
 @import '../../variable';
 @import '../../fonts';
 @import '../../mixin';
@@ -37,20 +36,15 @@
 .dark {
   width: 40px;
   padding: 12px;
-  background-color: var(--button-dark);
-  border: 1px solid var(--button-dark-border);
-
+  background-color: $surface-main-color;
   
-  &:hover svg {
-    fill: $white-color;
-  }
-
   &:hover {
     background-color: $icons-color;   
   }
 
   &--active {
-    background: var(--button-dark-active);
+    border: 1px solid $elements-color;
+    background: transparent;
   }
   
   &--large {
@@ -100,6 +94,10 @@
 
 .right {
   transform: rotate(180deg);
+}
+
+.dark:hover svg {
+  fill: $white-color;
 }
 
 

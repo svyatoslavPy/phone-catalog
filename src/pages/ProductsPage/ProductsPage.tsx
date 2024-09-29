@@ -17,7 +17,7 @@ import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import { fetchProductsByCategory } from '../../store/slices/productsSlice';
 import { getSortedProducts } from '../../utils/getSortedProducts';
-import styles from './ProductsPage.module.scss';
+import styles from './PhonesPage.module.scss';
 
 export const ProductsPage = () => {
   const { category } = useParams();

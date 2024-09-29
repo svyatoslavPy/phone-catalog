@@ -8,14 +8,12 @@ import { Swiper, SwiperRef, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import { useAppSelector } from '../../hooks/useAppSelector';
 import { Button } from '../../ui/Button/Button';
 import styles from './ProductBanners.module.scss';
 
 export const ProductBanners = () => {
   const swiperRef = useRef<SwiperRef>(null);
   const TIME_SLIDER = 5000;
-  const { theme } = useAppSelector(state => state.theme);
 
   const handlePrevSlide = () => {
     swiperRef.current?.swiper.slidePrev();
@@ -30,13 +28,12 @@ export const ProductBanners = () => {
       <div className={styles.productBanners}>
         <Button
           onClick={handlePrevSlide}
-          arrow={{
-            type: 'left',
-            fill: theme === 'light-theme' ? 'black' : '#F1F2F9',
-          }}
+          arrow={{ type: 'left', fill: '#F1F2F9' }}
           size="stretch"
           appearance="dark"
-        />
+        >
+          {''}
+        </Button>
 
         <Swiper
           autoplay={{
@@ -68,15 +65,13 @@ export const ProductBanners = () => {
 
         <Button
           onClick={handleNextSlide}
-          arrow={{
-            type: 'right',
-            fill: theme === 'light-theme' ? 'black' : '#F1F2F9',
-          }}
+          arrow={{ type: 'right', fill: '#F1F2F9' }}
           appearance="dark"
           size="stretch"
-        />
+        >
+          {''}
+        </Button>
       </div>
-
       <div className="button-swiper">
         <div className="swiper-pagination"></div>
       </div>

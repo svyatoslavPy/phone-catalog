@@ -1,16 +1,12 @@
 import { useEffect, useState } from 'react';
 
+import { logo } from '../../assets';
 import iconTop from '../../assets/images/arrow-right-primary.svg';
 
-import whiteIconLogo from '../../assets/images/logo-secondary.svg';
-import darkIconLogo from '../../assets/images/logo.svg';
-
-import { useAppSelector } from '../../hooks/useAppSelector';
 import styles from './Footer.module.scss';
 
 export const Footer = () => {
   const [isScrollToTop, setIsScrollToTop] = useState(false);
-  const { theme } = useAppSelector(state => state.theme);
 
   const handleScrollToTop = () => {
     setIsScrollToTop(true);
@@ -29,10 +25,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.logo}>
-            <img
-              src={theme === 'dark-theme' ? darkIconLogo : whiteIconLogo}
-              alt="logo"
-            />
+            <img src={logo} alt="logo" />
           </div>
 
           <ul className={styles.socials}>

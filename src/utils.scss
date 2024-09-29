@@ -3,7 +3,7 @@
   content: '';
   width: $width;
   height: 3px;
-  background: var(--header-line);
+  background: $white-color;
   transform: translateY(22px);
   transition: all $transition-duration;
 
@@ -17,15 +17,6 @@
   content: '';
   width: $width;
   height: 2px;
-  background: var(--header-line);
+  background: $white-color;
   margin-top: 4px;
-}
-
-
-@mixin extendedModifier ($property, $value)  {
-  $modifiers: "active", "hover";
-
-  @each $key in $modifiers {
-    --#{$property}-#{$key}: #{$value};
-  }  
 }

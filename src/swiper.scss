@@ -26,10 +26,9 @@
   width: 14px !important;
   height: 4px !important;
   border-radius: 0 !important;
-  background-color: var(--swiper-color) !important;
-  opacity: 1 !important;
+  background: $light-gray !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: var(--swiper-color-active) !important;
+  background: $white-color !important;
 }

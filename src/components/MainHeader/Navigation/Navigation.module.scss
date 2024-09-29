@@ -1,4 +1,3 @@
-
 @import '../../../variable';
 @import '../../../mixin';
 @import '../../../utils';
@@ -32,7 +31,7 @@
 .link {
   transition: color $transition-duration;
   text-decoration: none;
-  color: var(--nav-color);
+  color: $secondary-color;
   
 
   &::after {
@@ -44,7 +43,7 @@
   }
 
   &--active {
-    color: var(--nav-color-active);
+    color: $white-color;
 
     &::after {
       @include header-line(100%);
@@ -52,6 +51,6 @@
   }
 
   &:hover {
-    color: var(--nav-color-hover);
+    color: $white-color;
   }
 }

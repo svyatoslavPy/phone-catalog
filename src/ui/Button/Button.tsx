@@ -11,8 +11,8 @@ interface Props
     ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
+  children: ReactNode;
   appearance: 'primary' | 'dark';
-  children?: ReactNode;
   arrow?: {
     type: 'left' | 'right' | 'none';
     fill: string;
@@ -44,8 +44,8 @@ export const Button: React.FC<Props> = ({
           [styles.normal]: size === 'normal',
           [styles.large]: size === 'large',
           [styles.stretch]: size === 'stretch',
-          [styles.prev]: size === 'stretch',
-          [styles.next]: size === 'stretch',
+          [styles.prev]: arrowType === 'left' && size === 'stretch',
+          [styles.next]: arrowType === 'right' && size === 'stretch',
         },
       )}
       {...props}

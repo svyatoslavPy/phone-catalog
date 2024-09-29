@@ -1,4 +1,3 @@
-
 @import '../../variable';
 @import '../../mixin';
 
@@ -16,7 +15,7 @@
   padding-top: 32px;
   padding-bottom: 32px;
   height: $height-footer;
-  border-top: 1px solid var(--footer-border);
+  border-top: 1px solid $elements-color;
 
   @include media(mobile, large-mobile) {
     height: 260px;

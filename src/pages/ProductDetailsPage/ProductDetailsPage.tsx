@@ -19,7 +19,6 @@ import { useAppDispatch } from '../../hooks/useAppDispatch';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import { fetchProductsByCategory } from '../../store/slices/productsSlice';
 import { ButtonBack } from '../../ui/ButtonBack';
-
 import styles from './ProductDetailsPage.module.scss';
 
 export const ProductDetailsPage = () => {

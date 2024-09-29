@@ -1,4 +1,3 @@
-import { useAppSelector } from '../../../hooks/useAppSelector';
 import { Button } from '../../../ui/Button';
 import styles from './CarouselHeader.module.scss';
 
@@ -13,8 +12,6 @@ export const CarouselHeader: React.FC<Props> = ({
   handlePrevSlide,
   handleNextSlide,
 }) => {
-  const { theme } = useAppSelector(state => state.theme);
-
   return (
     <div className={styles.productsHeader}>
       <p className={styles.title}>{title}</p>
@@ -26,17 +23,18 @@ export const CarouselHeader: React.FC<Props> = ({
           size="small"
           appearance="dark"
           className="active"
-        />
+        >
+          {''}
+        </Button>
         <Button
           className="active"
           onClick={handleNextSlide}
-          arrow={{
-            type: 'right',
-            fill: theme === 'light-theme' ? '#313237' : '#F1F2F9',
-          }}
+          arrow={{ type: 'right', fill: '#F1F2F9' }}
           size="small"
           appearance="dark"
-        />
+        >
+          {''}
+        </Button>
       </div>
     </div>
   );

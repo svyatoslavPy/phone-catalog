@@ -3,18 +3,26 @@
 @import './fonts';
 @import './mixin';
 @import './swiper';
-@import './theme';
-@import './spacing';
 
 html {
   height: 100%;
 }
 
 body {
-  background-color: var(--bg-general);
+  background: $black-color;
   font-family: $general-font;
   position: relative;
   min-height: 100%;
 }
 
+main {
+  padding-bottom: calc($height-footer + 80px);
 
+  @include small {
+    padding-bottom: calc($height-footer + 64px);
+  }
+
+  @include media(mobile, large-mobile) {
+    padding-bottom: calc(260px + 64px);
+  }
+}

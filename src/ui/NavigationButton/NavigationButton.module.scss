@@ -8,7 +8,7 @@
   position: relative;
   background: transparent;
   border: none;
-  border-left: 1px solid var(--header-border);
+  border-left: 1px solid #323542;
   outline: none;
   flex-direction: column;
   align-items: center;
@@ -27,5 +27,5 @@
 }
 
 .Active {
-  border-bottom: 3px solid var(--header-line);
+  border-bottom: 3px solid $white-color;
 }

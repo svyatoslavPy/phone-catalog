@@ -1,4 +1,3 @@
-
 @import '../../variable';
 @import '../../mixin';
 
@@ -11,7 +10,7 @@
 .header {
   position: relative;
   z-index: 21;
-  border-bottom: 1px solid var(--header-border)
+  border-bottom: 1px solid $surface-main-color;
 }
 
 .content {
@@ -48,7 +47,7 @@
   background: transparent;
   outline: none;
   border: none;
-  border-left: 1px solid var(--header-border);
+  border-left: 1px solid #323542;
 
   @include small {
     width: 48px;

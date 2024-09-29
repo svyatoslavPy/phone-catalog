@@ -3,11 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Product } from '../../../types/Product';
 import { extractNumberAndSuffix } from '../../../utils';
 
-// import { favoriteIcon } from '../../../assets';
-// eslint-disable-next-line max-len
-import favoriteWhiteIcon from '../../../assets/images/favorite-icon-primary.svg';
-import favoriteDarkIcon from '../../../assets/images/favourite-icon.svg';
-
+import { favoriteIcon } from '../../../assets';
 import isFavoriteIcon from '../../../assets/images/is-favorite.svg';
 
 import cn from 'classnames';
@@ -33,7 +29,6 @@ export const ProductCard: React.FC<Props> = props => {
   const { pathname } = useLocation();
   const { cart } = useAppSelector(state => state.cart);
   const { favorites } = useAppSelector(state => state.favorites);
-  const { theme } = useAppSelector(state => state.theme);
 
   const dispatch = useAppDispatch();
 
@@ -117,13 +112,7 @@ export const ProductCard: React.FC<Props> = props => {
           onClick={handleToggleFavoriteStatus}
         >
           <img
-            src={
-              isFavoriteProduct
-                ? isFavoriteIcon
-                : theme === 'dark-theme'
-                  ? favoriteDarkIcon
-                  : favoriteWhiteIcon
-            }
+            src={isFavoriteProduct ? isFavoriteIcon : favoriteIcon}
             alt="favorite"
           />
         </Button>

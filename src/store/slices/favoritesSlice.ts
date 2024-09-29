@@ -15,6 +15,8 @@ export const favoritesSlice = createSlice({
   reducers: {
     addToFavorites: (state, action: PayloadAction<Product>) => {
       state.favorites.push(action.payload);
+
+      // localStorage.setItem(FAVORITES_KEY, JSON.stringify(state.favorites));
     },
 
     removeProduct: (state, action: PayloadAction<number>) => {
@@ -23,6 +25,8 @@ export const favoritesSlice = createSlice({
       );
 
       state.favorites.splice(productIndex, 1);
+
+      // localStorage.setItem(FAVORITES_KEY, JSON.stringify(state.favorites));
     },
   },
 });

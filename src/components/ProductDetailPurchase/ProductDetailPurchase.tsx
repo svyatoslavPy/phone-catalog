@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from 'react-router-dom';
 
-import favouriteDarkIcon from '../../assets/images/favourite-icon.svg';
+import { favoriteIcon } from '../../assets';
 import { ProductDetail } from '../../types/ProductDetail';
 import { SelectCapacity } from '../SelectCapacity/SelectCapacity';
 import { SelectColor } from '../SelectColor/SelectColor';
@@ -83,7 +83,6 @@ export const ProductDetailPurchase: React.FC<Props> = ({
   return (
     <div className={styles.productDescription}>
       <p className={styles.title}>Available colors</p>
-
       <SelectColor
         onUpdateColor={handleUpdateColor}
         updatedColor={productDetail?.color || ''}
@@ -122,7 +121,7 @@ export const ProductDetailPurchase: React.FC<Props> = ({
           size="large"
         >
           <img
-            src={isFavoriteProduct ? isFavoriteIcon : favouriteDarkIcon}
+            src={isFavoriteProduct ? isFavoriteIcon : favoriteIcon}
             alt="favorite"
           />
         </Button>

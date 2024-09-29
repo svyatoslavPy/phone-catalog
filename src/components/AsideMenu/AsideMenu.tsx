@@ -3,15 +3,8 @@ import { NAV_ROUTES } from '../../constants/constants';
 import { getNavigationRoute } from '../../utils';
 
 import cn from 'classnames';
+import { cartIcon, favoriteIcon } from '../../assets';
 
-import cartWhiteIcon from '../../assets/images/cart-icon-secondary.svg';
-import cartDarkIcon from '../../assets/images/cart-icon.svg';
-
-// eslint-disable-next-line max-len
-import favoriteWhiteIcon from '../../assets/images/favorite-icon-secondary.svg';
-import favoriteDarkIcon from '../../assets/images/favourite-icon.svg';
-
-import { useAppSelector } from '../../hooks/useAppSelector';
 import styles from './AsideMenu.module.scss';
 
 type Props = {
@@ -20,8 +13,6 @@ type Props = {
 };
 
 export const AsideMenu: React.FC<Props> = ({ onCloseMenu, active }) => {
-  const { theme } = useAppSelector(state => state.theme);
-
   return (
     <aside
       className={cn(styles.aside, {
@@ -58,10 +49,7 @@ export const AsideMenu: React.FC<Props> = ({ onCloseMenu, active }) => {
           }
           to="/favorites"
         >
-          <img
-            src={theme === 'dark-theme' ? favoriteDarkIcon : favoriteWhiteIcon}
-            alt="favourite"
-          />
+          <img src={favoriteIcon} alt="favourite" />
         </NavLink>
         <NavLink
           className={({ isActive }) =>
@@ -71,10 +59,7 @@ export const AsideMenu: React.FC<Props> = ({ onCloseMenu, active }) => {
           }
           to="/cart"
         >
-          <img
-            src={theme === 'dark-theme' ? cartDarkIcon : cartWhiteIcon}
-            alt="cart"
-          />
+          <img src={cartIcon} alt="cart" />
         </NavLink>
       </div>
     </aside>

@@ -3,12 +3,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 import { IconRight } from '../../ui/IconRight';
 
-import iconWhiteHome from '../../assets/images/home-secondary.svg';
-import iconDarkHome from '../../assets/images/home.svg';
-
+import iconHome from '../../assets/images/home.svg';
 import { capatalize } from '../../utils';
 
-import { useAppSelector } from '../../hooks/useAppSelector';
 import styles from './Breadcrumbs.module.scss';
 
 type Props = {
@@ -18,18 +15,11 @@ type Props = {
 
 export const Breadcrumbs: React.FC<Props> = ({ category, productName }) => {
   const { pathname } = useLocation();
-  const { theme } = useAppSelector(state => state.theme);
-  // const theme = 'light-theme';
-  // console.log(theme);
 
   return (
     <div className={styles.breadcrumbs}>
       <Link className={styles.link} to="/">
-        <img
-          className={styles.icon}
-          src={theme === 'light-theme' ? iconWhiteHome : iconDarkHome}
-          alt="icon"
-        />
+        <img className={styles.icon} src={iconHome} alt="icon" />
       </Link>
 
       <IconRight fill="#4A4D58 " />

@@ -3,22 +3,13 @@ import { useState } from 'react';
 import closeIcon from '../../assets/images/CloseMenu.svg';
 import menuIcon from '../../assets/images/Menu.svg';
 
-// eslint-disable-next-line max-len
-import favoriteWhiteIcon from '../../assets/images/favorite-icon-secondary.svg';
-import favoriteDarkIcon from '../../assets/images/favourite-icon.svg';
-
-import cartWhiteIcon from '../../assets/images/cart-icon-secondary.svg';
-import cartDarkIcon from '../../assets/images/cart-icon.svg';
-
+import { cartIcon, favoriteIcon, logo } from '../../assets/index';
 import { NavigationButton } from '../../ui/NavigationButton';
 
 import { Link } from 'react-router-dom';
 import { useAppSelector } from '../../hooks/useAppSelector';
 import { getLengthItems } from '../../utils/getLengthItems';
 import { AsideMenu } from '../AsideMenu';
-
-import whiteIconLogo from '../../assets/images/logo-secondary.svg';
-import darkIconLogo from '../../assets/images/logo.svg';
 
 import styles from './MainHeader.module.scss';
 import { Navigation } from './Navigation';
@@ -28,11 +19,10 @@ export const MainHeader = () => {
 
   const { favorites } = useAppSelector(state => state.favorites);
   const { cart } = useAppSelector(state => state.cart);
-  const { theme } = useAppSelector(state => state.theme);
 
   const totalItems = getLengthItems(cart);
 
-  const handleToggleMenu = () => {
+  const handleToogleMenu = () => {
     setShowMenu(!showMenu);
   };
 
@@ -47,10 +37,7 @@ export const MainHeader = () => {
           <div className={styles.content}>
             <div className={styles.headerInner}>
               <Link to="/">
-                <img
-                  src={theme === 'dark-theme' ? darkIconLogo : whiteIconLogo}
-                  alt="logo"
-                />
+                <img src={logo} alt="logo" />
               </Link>
 
               <Navigation />
@@ -63,11 +50,7 @@ export const MainHeader = () => {
                 )}
                 <img
                   className={styles.icon}
-                  src={
-                    theme === 'light-theme'
-                      ? favoriteWhiteIcon
-                      : favoriteDarkIcon
-                  }
+                  src={favoriteIcon}
                   alt="favorites"
                 />
               </NavigationButton>
@@ -75,14 +58,10 @@ export const MainHeader = () => {
                 {!!cart.length && (
                   <span className={styles.counter}>{totalItems}</span>
                 )}
-                <img
-                  className={styles.icon}
-                  src={theme === 'light-theme' ? cartWhiteIcon : cartDarkIcon}
-                  alt="cart"
-                />
+                <img className={styles.icon} src={cartIcon} alt="cart" />
               </NavigationButton>
 
-              <button onClick={handleToggleMenu} className={styles.button}>
+              <button onClick={handleToogleMenu} className={styles.button}>
                 <img src={showMenu ? closeIcon : menuIcon} alt="cart" />
               </button>
             </div>
