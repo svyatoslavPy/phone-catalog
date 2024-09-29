@@ -1,3 +1,20 @@
-.starter {
-  font-size: 18px;
+@import './reset';
+@import './variable';
+@import './fonts';
+@import './mixin';
+@import './swiper';
+@import './theme';
+@import './spacing';
+
+html {
+  height: 100%;
 }
+
+body {
+  background-color: var(--bg-general);
+  font-family: $general-font;
+  position: relative;
+  min-height: 100%;
+}
+
+

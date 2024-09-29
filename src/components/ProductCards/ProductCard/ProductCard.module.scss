@@ -1,0 +1,62 @@
+
+@import '../../../variable';
+
+.card {
+  padding: 32px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: $white-color;
+
+  &:hover {
+    outline: 1px solid var(--border-card-hover);
+  }
+}
+
+.link {
+  text-decoration: none;
+}
+
+.picture {
+  width: 173px;
+  height: 196px;
+  object-fit: contain;
+}
+
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  height: 50px;
+  color: var(--card-text-color);
+  line-height: 21px;
+  margin-top: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $elements-color;
+  padding-top: 16px;
+}
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--card-text-primary-color);
+
+  &--active {
+    font-weight: 600;
+    color: var(--card-text-color)
+  }
+}

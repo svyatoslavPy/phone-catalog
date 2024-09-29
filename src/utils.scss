@@ -1,0 +1,31 @@
+@mixin header-line($width) {
+  display: block;
+  content: '';
+  width: $width;
+  height: 3px;
+  background: var(--header-line);
+  transform: translateY(22px);
+  transition: all $transition-duration;
+
+  @include medium {
+    transform: translateY(15px);
+  }
+}
+
+@mixin aside-line($width) {
+  display: block;
+  content: '';
+  width: $width;
+  height: 2px;
+  background: var(--header-line);
+  margin-top: 4px;
+}
+
+
+@mixin extendedModifier ($property, $value)  {
+  $modifiers: "active", "hover";
+
+  @each $key in $modifiers {
+    --#{$property}-#{$key}: #{$value};
+  }  
+}

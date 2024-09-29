@@ -1,9 +1,19 @@
 import { createRoot } from 'react-dom/client';
 
-import 'bulma/css/bulma.css';
-import '@fortawesome/fontawesome-free/css/all.css';
-import './index.scss';
+import { HashRouter as Router } from 'react-router-dom';
 
-import { App } from './App';
+import { Provider } from 'react-redux';
+import { Root } from './routes/index';
+// src/index.js
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistor, store } from './store';
 
-createRoot(document.getElementById('root') as HTMLDivElement).render(<App />);
+createRoot(document.getElementById('root') as HTMLElement).render(
+  <Router>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Root />
+      </PersistGate>
+    </Provider>
+  </Router>,
+);

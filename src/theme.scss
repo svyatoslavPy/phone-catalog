@@ -1,0 +1,47 @@
+@import './variable';
+@import './utils';
+
+html[data-theme="dark-theme"] {
+  --bg-general: #{$black-color};
+  --nav-color: #{$secondary-color};
+  --header-border: #{$surface-main-color};
+  --header-line: #{$white-color};
+  --title-color: #{$white-color};
+  --aside-color: #{$elements-color};
+  --swiper-color: #{$light-gray};
+  --bg-card: #{$surface-secondary-color};
+  --border-card: #{transparent};
+  --card-text-color: #{$white-color};
+  --card-text-primary-color: #{$secondary-color};
+  --border-card-hover: #{$surface-main-color};
+  --footer-border: #{$elements-color};
+  --button-dark: #{$surface-main-color};
+  --button-dark-active: #{transparent};
+  --button-dark-border: #{$elements-color};
+
+  @include extendedModifier('nav-color', $white-color);
+  @include extendedModifier('aside-color', $white-color);
+  @include extendedModifier('swiper-color', $white-color);
+}
+
+html[data-theme="light-theme"] {
+  --bg-general: #{$white-color};
+  --nav-color: #{$high-light-gray};
+  --header-border: #{$gray-primary};
+  --header-line: #{$gray-color};
+  --title-color: #{$black-color};
+  --aside-color: #{$gray-primary};
+  --swiper-color: #{$gray-primary};
+  --bg-card: #{transparent};
+  --card-text-color: #{$gray-color};
+  --card-text-primary-color: #{$high-light-gray};
+  --border-card: #{$gray-primary};
+  --border-card-hover: #{$gray-primary};
+  --footer-border: #{$gray-primary};
+  --button-dark: #{transparent};
+  --button-dark-border: #{$gray-primary};
+
+  @include extendedModifier('nav-color', $black-color);
+  @include extendedModifier('aside-color', $black-color);
+  @include extendedModifier('swiper-color', $black-color);
+}
