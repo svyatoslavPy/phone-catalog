@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "./static/css/main.11b80634.css",
+    "main.js": "./static/js/main.6316c258.js",
+    "static/media/banner-tablets.png": "./static/media/banner-tablets.3ab0c9b71cae9e04b094.png",
+    "static/media/banner-phones.png": "./static/media/banner-phones.f509ad3c8ed651749cb5.png",
+    "static/media/banner-accessories.png": "./static/media/banner-accessories.6a3884f3f1091702f8ed.png",
+    "static/media/header-logo.svg": "./static/media/header-logo.e52ee5eb4850744ba7557073ee922d92.svg",
+    "static/media/Mont-Regular.otf": "./static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "./static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "./static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "static/media/Banner.png": "./static/media/Banner.7b42f5a71f0b23181a44.png",
+    "static/media/category-accessories.png": "./static/media/category-accessories.b914f4124f0dab3439fb.png",
+    "static/media/category-tablet.png": "./static/media/category-tablet.c198526af9dea077ce2a.png",
+    "static/media/category-phones.png": "./static/media/category-phones.6b5621960ea0f7e93933.png",
+    "static/media/cart-icon.svg": "./static/media/cart-icon.6afda88d6d279331f24b83b546a515e2.svg",
+    "static/media/favourite-icon.svg": "./static/media/favourite-icon.40477fe0fa486830b14a246f03f905a3.svg",
+    "static/media/home.svg": "./static/media/home.901f72c9436f9e8c63573838c422c80d.svg",
+    "static/media/is-favorite.svg": "./static/media/is-favorite.e06f68523386b982e85a9ceaf23038bb.svg",
+    "static/media/close.svg": "./static/media/close.a7b1ced7ed3e493851297840ae08ea27.svg",
+    "static/media/CloseMenu.svg": "./static/media/CloseMenu.240bedeea54b93e8ac74e6e2b51ec01a.svg",
+    "static/media/Menu.svg": "./static/media/Menu.ccd1a9542b5bc584f2a1c0456d816ec9.svg",
+    "static/media/arrow-down.svg": "./static/media/arrow-down.9a6321b1ecba83d4a9626ae65cab63a8.svg",
+    "static/media/arrow-up.svg": "./static/media/arrow-up.df368d439290dc0f6156d0550f1ed502.svg",
+    "static/media/arrow-right-primary.svg": "./static/media/arrow-right-primary.5fe8ad1fe56e8dbd29b5a919f11dafdc.svg",
+    "static/media/arrow-right-icon.svg": "./static/media/arrow-right-icon.358e5fb56fc0493b143391e38f033430.svg",
+    "static/media/arrow-left-icon.svg": "./static/media/arrow-left-icon.13988b63070894f986c1d6be1a9ee533.svg",
+    "index.html": "./index.html",
+    "main.11b80634.css.map": "./static/css/main.11b80634.css.map",
+    "main.6316c258.js.map": "./static/js/main.6316c258.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11b80634.css",
+    "static/js/main.6316c258.js"
+  ]
+}
