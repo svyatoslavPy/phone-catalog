@@ -8,7 +8,7 @@ import arrowRightIcon from './images/arrow-right-icon.svg';
 
 import cartIcon from './images/cart-icon.svg';
 import favoriteIcon from './images/favourite-icon.svg';
-import logo from './images/header-logo.svg';
+import logo from './images/logo.svg';
 
 export {
   arrowRightIcon,
