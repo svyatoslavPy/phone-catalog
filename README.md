@@ -17,3 +17,6 @@ Technologies Used
 [DEMO LINK](https://svyatoslavPy.github.io/phone-catalog/) | [LAYOUT DESIGN](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
 
 
+git clone https://github.com/svyatoslavPy/phone-catalog
+npm i
+npm run start
