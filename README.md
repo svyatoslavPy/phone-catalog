@@ -16,9 +16,25 @@ Technologies Used
 
 [DEMO LINK](https://svyatoslavPy.github.io/phone-catalog/) | [LAYOUT DESIGN](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
 
-Follow instuctions
+## How to Run the Project Locally
 
-* Make sure you have Node.js installed (higher version 14.x).
-* git clone https://github.com/svyatoslavPy/phone-catalog
-* npm i
-* npm run start
+To run this project on your local machine, please follow these steps:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/svyatoslavPy/phone-catalog.git
+Navigate to the project directory:
+
+* bash
+cd phone-catalog
+Install dependencies: Make sure you have Node.js installed (recommended to use more than version 14.x). Run the following command to install all the necessary dependencies:
+
+* bash
+npm install
+Start the development server: Run the following command to start a local development server:
+
+* bash
+npm run start
+This will start the project on http://localhost:3000 (or another port if specified in the configuration).
+
+Open the phone catalog: Once the server is running, open your browser and navigate to http://localhost:3000 to view the phone catalog.
