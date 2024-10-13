@@ -17,7 +17,8 @@ Technologies Used
 [DEMO LINK](https://svyatoslavPy.github.io/phone-catalog/) | [LAYOUT DESIGN](https://www.figma.com/design/BUusqCIMAWALqfBahnyIiH/Phone-catalog-(V2)-Original-Dark)
 
 Follow instuctions
-* Make sure you have Node.js installed (version 14.x or higher is recommended)
+
+* Make sure you have Node.js installed (higher version 14.x).
 * git clone https://github.com/svyatoslavPy/phone-catalog
 * npm i
 * npm run start
